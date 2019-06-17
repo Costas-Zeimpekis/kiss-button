@@ -16,7 +16,7 @@ export class MainComponent implements OnInit {
 
   private getPosts() {
     this.postsService.getPosts().subscribe(posts => {
-      this.posts = posts.sources;
+      this.posts = posts['sources'];
       console.log('This is posts', posts);
     });
   }
