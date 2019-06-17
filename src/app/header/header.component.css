@@ -38,3 +38,8 @@ header>nav {
   height: 50px;
   width: 100%;
 }
+
+.dropDownMenu {
+  background-color: #254a74;
+  padding: 2em 0;
+}
