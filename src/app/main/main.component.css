@@ -1,0 +1,11 @@
+@media (max-width: 575px) {
+  .cardPost {
+    width: 90%;
+  }
+}
+
+@media(min-width: 576px) {
+  .cardPost {
+    width: 30%;
+  }
+}

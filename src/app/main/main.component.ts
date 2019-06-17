@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostsService } from '../shared/posts.service';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+  posts = [];
+  constructor(private postsService: PostsService) {}
 
   ngOnInit() {
+    this.getPosts();
   }
 
+  private getPosts() {
+    this.postsService.getPosts().subscribe(posts => {
+      this.posts = posts.sources;
+      console.log('This is posts', posts);
+    });
+  }
 }
