@@ -1,0 +1,35 @@
+@media (max-width: 575px) {
+  .showMenu {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  .hideMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .showMenu {
+    display: none;
+  }
+
+  .hideMenu {
+    display: block;
+  }
+}
+
+.headerImage {
+  /* background-image: url("../../assets/img/desert-background.jpg");
+  background-repeat: no-repeat; */
+  height: 150px;
+}
+
+.headerImage img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+header>nav {
+  background-color: #254a74;
+}
